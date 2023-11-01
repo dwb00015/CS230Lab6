@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar';
 
 function App() {
+  return(
+    <Navbar />
+  );
   return (
       <div className="App">
           <h1>CS 230L</h1>
