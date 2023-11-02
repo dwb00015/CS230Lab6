@@ -1,18 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
+import "./Navbar.css";
 
 function Navbar(){
     return(
-        <div>
-            Navbar
-        </div>
-    );
-    return(
         <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
+            <h1>Navbar</h1>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <div className="search-bar">
+                <input type="text" placeholder="Search" />
+                <button>Search</button>
+            </div>
         </nav>
     );
 }
